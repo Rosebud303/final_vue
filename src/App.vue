@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    {{msg}}
-    <Images v-bind:msg="msg"/>
+    <h1>{{msg}}</h1>
+    <Images />
   </div>
 </template>
 
@@ -15,7 +15,7 @@ export default {
   },
   data() {
     return {
-      msg: 'Helloz'
+      msg: 'Gallery'
     }
   }
 }
@@ -23,6 +23,13 @@ export default {
 
 <style>
 #app {
-
+  font-family: cursive;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('https://i.imgur.com/ffa5IVO.jpg');
+  background-attachment: fixed;
+  background-position: center; 
 }
 </style>
